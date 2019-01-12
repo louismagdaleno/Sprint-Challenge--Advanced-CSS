@@ -1,5 +1,8 @@
 // Mixins Here
 
-.flex-class() {
-	
+.flex-class(@f-direction; @j-content; @a-items) {
+	display: flex;
+	flex-direction: @f-direction;
+	justify-content: @j-content;
+	align-items: @a-items;
 }
