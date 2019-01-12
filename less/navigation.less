@@ -3,9 +3,11 @@
 .nav {
 	font-family: @river-bend;
 	background-color: @nav-bg;
+	.flex-class(@f-direction: column; @j-content: center; @a-items: center);
 
 	nav {
-		
+		.flex-class(@f-direction: row; @j-content: space-between; @a-items: center);
+
 		a {
 			text-decoration: none;
 			font-size: 1.6rem;
