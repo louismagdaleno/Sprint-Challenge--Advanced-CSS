@@ -14,8 +14,17 @@
 
 		a {
 			text-decoration: none;
-			font-size: 1.3em;
+			font-size: 1.4rem;
 			color: @ebony-clay;
+		}
+
+		@media @phone {
+			
+				margin: 0;
+				width: 80%;
+				.flex-class(@f-direction: row; @a-items: center; @j-content: space-around);
+				margin: 10px 0;
+			
 		}
 	}
 
