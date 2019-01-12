@@ -1,6 +1,16 @@
 // Home Content
 
 .home {
+  animation: 1s fadein 0.5s forwards;
+  opacity: 0;
+  color: #fff;
+
+@keyframes fadein {
+  100% {
+    opacity: 1;
+    color: black;
+  }
+  }
 
   .intro {
     img {
@@ -76,10 +86,12 @@
       }
 
       .btn {
-        .button-class(@btn-height: 40px; @btn-width: 120px; @btn-bg-color: black; @btn-color: white);
+        .button-class(@btn-height: 40px; @btn-width: 120px; @btn-bg-color: @btn-bg-color; @btn-color: white);
 
         @media @phone {
-          .button-class(@btn-height: 80px; @btn-width: 100%; @btn-bg-color: @btn-bg-color; @btn-color: white);
+          height: 80px;
+          width: 100%;
+          background-color: @btn-bg-color;
         }
         &:hover {
             color: black;
