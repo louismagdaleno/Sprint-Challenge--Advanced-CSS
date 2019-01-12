@@ -160,6 +160,17 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.nav {
+  font-family: #454A59;
+  background-color: #F6F6F6;
+}
+.nav nav a {
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+.nav h1 {
+  font-size: 3rem;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
