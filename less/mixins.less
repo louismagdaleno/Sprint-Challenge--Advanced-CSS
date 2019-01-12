@@ -1,8 +1,17 @@
 // Mixins Here
 
-.flex-class(@f-direction; @j-content; @a-items) {
+.flex-class(@f-direction: row; @j-content: center; @a-items: center) {
 	display: flex;
 	flex-direction: @f-direction;
 	justify-content: @j-content;
 	align-items: @a-items;
+}
+
+.button-class(@btn-height: 200px; @btn-width: 200px; @btn-bg-color: brown; @btn-color: black) {
+	height: @btn-height;
+	width: @btn-width;
+	background-color: @btn-bg-color;
+	color: @btn-color;
+	text-align: center;
+
 }
