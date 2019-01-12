@@ -109,7 +109,23 @@
         height: auto;
         border-radius: 10px;
       }
+
+
     }
+
+    form {
+      margin-bottom: 10px;
+      @media @phone {
+      .flex-class(@f-direction: column; @j-content: space-between; @a-items: center); 
+      input {
+        height: 40px;
+        width: 100%;
+      }
+
+      
+      }
+    }
+
     @media @phone {
       width: 100%;
       margin: 0;

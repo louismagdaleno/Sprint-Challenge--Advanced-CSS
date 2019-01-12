@@ -319,6 +319,21 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.home .walk form {
+  margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .home .walk form input {
+    height: 40px;
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
   .home .walk {
     width: 100%;
