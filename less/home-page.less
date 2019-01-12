@@ -58,7 +58,11 @@
       }
 
       .btn {
-        .button-class(@btn-height: 40px; @btn-width: 120px; @btn-bg-color: black; @btn-color: white)
+        .button-class(@btn-height: 40px; @btn-width: 120px; @btn-bg-color: black; @btn-color: white);
+        &:hover {
+            color: black;
+            background-color: white;
+        }
       }
     }
 
